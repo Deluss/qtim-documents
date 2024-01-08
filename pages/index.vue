@@ -6,6 +6,7 @@
 import { onMounted } from '#imports'
 
 onMounted(() => {
+	console.log('test')
 	YaAuthSuggest.init(
 		{
 			client_id: '24aa622ba5d945b7bfefac27e8898eb8',
