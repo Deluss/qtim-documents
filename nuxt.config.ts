@@ -14,5 +14,6 @@ export default defineNuxtConfig({
     analyze: {
       projectRoot: '/qtim-documents'
     }
-  }
+  },
+  buildDir: '/qtim-documents/.nuxt'
 })
