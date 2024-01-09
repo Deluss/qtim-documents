@@ -1,4 +1,4 @@
-<script lang="ts" scss>
+<script lang="ts" setup>
 import { onMounted } from '#imports'
 
 onMounted(() => {
