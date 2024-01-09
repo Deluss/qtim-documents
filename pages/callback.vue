@@ -1,8 +1,17 @@
 <script lang="ts" setup>
-import { onMounted } from '#imports'
+import { onMounted, useRoute } from '#imports'
+const route = useRoute()
 
 onMounted(() => {
-	window.close()
+	localStorage.setItem('access_token', String(route.query.access_token))
+	localStorage.setItem('expires_in', String(route.query.expires_in))
+	YaSendSuggestToken(
+		'https://deluss.github.io/qtim-documents',
+		{
+			flag: true
+		}
+	)
+	// window.close()
 })
 </script>
 
