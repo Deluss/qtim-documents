@@ -6,12 +6,11 @@
 import { onMounted } from '#imports'
 
 onMounted(() => {
-	console.log('test')
 	YaAuthSuggest.init(
 		{
 			client_id: '24aa622ba5d945b7bfefac27e8898eb8',
 			response_type: 'token',
-			redirect_uri: 'https://oauth.yandex.ru/verification_code'
+			redirect_uri: 'https://deluss.github.io/qtim-documents/callback'
 		},
 		'https://deluss.github.io/qtim-documents'
 	)
